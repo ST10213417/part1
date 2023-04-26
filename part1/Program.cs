@@ -66,6 +66,8 @@ namespace part1
 					case "6":
 						Console.WriteLine("Closing Application");
 						return;
+					default:
+						Console.WriteLine("Invalid Option, Try again!!!!");
 						break;
 				}
 			}
