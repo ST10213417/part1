@@ -58,7 +58,13 @@ namespace part1
 						//call method to reset and enter new recipe
 						rec.quantityReset();
 						break;
+					case "5":
+						// call method to clear recipe
+						rec.clearRecipe();
+						break;
+					case "6":
 
+						break;
 				}
 			}
 
