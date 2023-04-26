@@ -64,9 +64,11 @@ namespace part1
 						rec.clearRecipe();
 						break;
 					case "6":
+						// exit 
 						Console.WriteLine("Closing Application");
 						return;
 					default:
+						//Invalid option
 						Console.WriteLine("Invalid Option, Try again!!!!");
 						break;
 				}
