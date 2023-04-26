@@ -64,7 +64,8 @@ namespace part1
 						rec.clearRecipe();
 						break;
 					case "6":
-						rec.exit();
+						Console.WriteLine("Closing Application");
+						return;
 						break;
 				}
 			}
