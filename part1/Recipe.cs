@@ -6,20 +6,11 @@ using System.Threading.Tasks;
 
 namespace part1
 {
-	internal class recMethods
-	{
-
-		class Ingredient
-		{
-			public string[] ingredientName;
-			public double[] quantities;
-			public string[] unit;
-		}
 
 		class Recipe
 		{
 
-			private int numIngredients;
+		private int ingredientsNum;
 			private string[] ingredients;
 			private double[] quantity;
 			private string[] units;
@@ -27,13 +18,6 @@ namespace part1
 			private string[] steps;
 			private double factor;
 
-			public Recipe()
-			{
-				ingredients = new string[0];
-				quantity = new double[0];
-				units = new string[0];
-				steps = new string[0];
-			}
 
 
 			public void getRecipe()
@@ -79,15 +63,17 @@ namespace part1
 
 			public void displayRecipe()
 			{
-				Console.ForegroundColor = ConsoleColor.Green;
-				Console.WriteLine("Recipe Ingredients: ");
-				for (int x = 0; x < numIngredients; x++)
-				{
 
-					Console.WriteLine(quantity[x]  + units[x] + ingredients[x]);
+				Console.ForegroundColor = ConsoleColor.Green;
+				Console.Write("\nRecipe Ingredients: ");
+
+				for ( int x = 0; x < ingredients; x++)
+				{
+				Console.WriteLine($" {quantity[x]} { units[x]} of { ingredients[x] }"
+				 );
 
 				}
-				;
+				
 			}
 
 			public void scaleRecipe()
@@ -108,4 +94,4 @@ namespace part1
 				Console.ReadLine();
 			}
 		}
-	} }
+	} 

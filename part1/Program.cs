@@ -33,27 +33,28 @@ namespace part1
 
 				string userOption = Console.ReadLine();
 
-				
+			    Recipe rec = new Recipe();
 
 				switch (userOption)
 				{
 
 					case "1":
 						//call method to get recipe details
-						recMethods.getRecipe();
+						rec.getRecipe();
 
 						break;
 					case "2":
 						//call method to display recipe details
-						app.displayRecipe();
+						rec.displayRecipe();
+						;
 						break;
 					case "3":
-						//call method to scale recipe
-						app.scaleRecipe();
+						//call method scale recipe
+						rec.scaleRecipe();
 						break;
 					case "4":
 						//call method to reset and enter new recipe
-						app.quantityReset();
+						rec.quantityReset();
 						break;
 
 				}
