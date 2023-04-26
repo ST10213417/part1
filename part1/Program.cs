@@ -29,7 +29,8 @@ namespace part1
 								 + "\n2 - Display Recipe"
 								 + "\n3 - Request recipe is scaled"
 								 + "\n4 - Request quantity reset"
-								 + "\n5 - Enter new recipe"
+								 + "\n5 - Clear recipe"
+								 + "\n6 - Exit"
 								 );
 
 				string userOption = Console.ReadLine();
