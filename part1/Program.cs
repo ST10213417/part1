@@ -13,11 +13,12 @@ namespace part1
 
 		static void Main(string[] args)
 		{
+			//colour for heading
 			Console.ForegroundColor = ConsoleColor.Green;
 
 
 			Console.WriteLine("=====Welcome to The Recipe Writer=====");
-			
+			//while loop to run menu until the wrong condition is entered 
 			while (true)
 			{
 
@@ -32,9 +33,9 @@ namespace part1
 								 );
 
 				string userOption = Console.ReadLine();
-
+				//created an object for external class
 			    Recipe rec = new Recipe();
-
+				//switch case to check user option in menu
 				switch (userOption)
 				{
 
@@ -51,6 +52,7 @@ namespace part1
 					case "3":
 						//call method scale recipe
 						rec.scaleRecipe();
+						
 						break;
 					case "4":
 						//call method to reset and enter new recipe
