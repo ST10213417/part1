@@ -63,7 +63,7 @@ namespace part1
 						rec.clearRecipe();
 						break;
 					case "6":
-
+						rec.exit();
 						break;
 				}
 			}
